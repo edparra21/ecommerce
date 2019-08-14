@@ -1,4 +1,4 @@
-/* 
+
 @keyframes bgcolor {
     0% {
         background-color: #45a3e5
@@ -19,25 +19,89 @@
     100% {
         background-color: #864cbf
     }
-} */
-
-body{
-    
-    background-color: aqua;
-    background-repeat:no-repeat;
-    background-position: center center;
-    
-    /* -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate; */
 }
 
-/* .navbar{
-    background-color: darkslategray;
+#burger:hover{
+    cursor: pointer;
 }
 
 .icon{
     padding-left: 1em;
     padding-right: 1em;
-} */
+}
+.navbar-item:hover(){
+    cursor: pointer;
+}
+
+#sbElement{
+    transition-duration: 0.2s;
+    border-radius: 3px;   
+}
+
+#sbElement:hover{
+    transition-duration: 0.2s;
+    -webkit-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 1px 1px rgba(0,0,0,0.75);
+
+    background-color: rgba(51, 54, 238, 0.5);
+}
+
+#sbColumn{
+    transition-duration: 3s;
+    z-index: 3;
+}
+
+
+.magic-container {
+    padding:0;
+    overflow:hidden;
+    position:relative;
+  }
+  
+  .sidebar-shrink {
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .main-content {
+    height: 100%;
+    left: 0;
+    perspective: 1000px;
+    position: relative;
+    transition: transform 0.5s ease 0s;
+    z-index: 2;
+
+    background-image: url('../DATA/IMG/musixLogo.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    
+    
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  .sidebar-left-nav {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: all 0.5s ease 0s;
+      visibility: hidden;
+      background-image: url('../DATA/IMG/thunder-pattern-thunder-icon-vector-21043157.jpg');
+      z-index: 1;
+  }
+  .closed .sidebar-left-nav {
+    transition: transform 0.5s ease 0s;
+    visibility: visible;
+  }
+  .closed .main-content {
+    transform: translate3d(250px, 0px, 0px);
+}
+
+.card{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}

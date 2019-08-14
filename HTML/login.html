@@ -10,73 +10,170 @@
         <link rel="stylesheet" href="../RESOURCES/FRAMEWORKS/fontawesome-free-5.10.1-web/css/all.css"/>
         <link rel="stylesheet" href="../RESOURCES/CSS/login.css"/>
     </head>
-    <body>
-            <!-- <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:whitesmoke; height: 5em;">
-            
-                    <a class="navbar-item" href="index.html">
-                        <img src="../RESOURCES/DATA/IMG/musix.png" >
+    <body class="is-bold">
+        <!-- NAVBAR -->
+        <nav class="navbar" role="navigation" aria-label="main navigation" style="height: 5em;">
+            <a class="navbar-item" href="index.html">
+                <img src="../RESOURCES/DATA/IMG/musix.png" >
+            </a>
+            <div  class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Home
+                        <span class="icon">
+                            <i class="fas fa-igloo"></i>
+                        </span>
                     </a>
-                    
-                    <div  class="navbar-menu">
-                        <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Categories
+                        </a>
+                        <div class="navbar-dropdown">
                             <a class="navbar-item">
-                                Home
+                                Instruments
                                 <span class="icon">
-                                        <i class="fas fa-igloo"></i>
+                                    <i class="fas fa-guitar"></i>
                                 </span>
                             </a>
-                      
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                    Categories
-                                </a>
-                      
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
-                                        Instruments
-                                        <span class="icon">
-                                            <i class="fas fa-guitar"></i>
-                                        </span>
-                                    </a>
-                                    <a class="navbar-item">
-                                        CD's
-                                        <span class="icon">
-                                            <i class="fas fa-compact-disc"></i>
-                                        </span>
-                                    </a>
-                                    <a class="navbar-item">
-                                        Dressroom
-                                        <span class="icon">
-                                            <i class="fas fa-tshirt"></i>
-                                        </span>
-                                    </a>
-                                    <hr class="navbar-divider">
-                                    <a class="navbar-item">
-                                        Create a new Category
-                                        <span class="icon">
-                                                <i class="fas fa-plus"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+                            <a class="navbar-item">
+                                CD's
+                                <span class="icon">
+                                    <i class="fas fa-compact-disc"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                Dressroom
+                                <span class="icon">
+                                    <i class="fas fa-tshirt"></i>
+                                </span>
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Create a new Category
+                                <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                </span>
+                            </a>
                         </div>
-                      
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                                <div class="buttons">
-                                    <a class="button is-primary">
-                                        <strong>Sign up</strong>
-                                    </a>
-                                    <a class="button is-light">
-                                        Log in
-                                    </a>
-                                </div>
+                       
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Search..." size="150">
                             </div>
                         </div>
                     </div>
-                </nav>   -->
-           
-       
+                    <div class="navbar-item">
+                            <span><a href="search.html"><i class="fas fa-search"></i></a></span>
+                    </div>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>  
+        <!-- SIDEBAR -->
+        <div class="magic-container">
+            <div class="sidebar-left-nav" >
+                <div class="sidebar-shrink" >
+                        <p class="menu-label">
+                            General 
+                        </p>
+                        <ul class="menu-list">
+                            <li>
+                                <a class="contaniner is-pulled-right" id="sbElement" href="login.html">
+                                    <figure class="image is-128x128 is-clearfix">
+                                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li style="width:50%; text-align: left; border-bottom: black">Usuario</li>
+                            <li style="width:40%; text-align: center; padding: 1em;">
+                                    <a id="sbElement" href="profile.html">Ver Perfil</a>
+                            </li>
+                        </ul>
+                        <p class="menu-label" style="margin-top: 10em;">
+                            Administración
+                        </p>
+                        <ul class="menu-list" >
+                            <li style="width: 50%"><a id="sbElement" href="workers.html">Empleados</a></li>
+                            <li>
+                            <a>Administra tu tienda</a>
+                            <ul>
+                                <li><a id="sbElement">Dar de Alta un Producto</a></li>
+                                <li><a id="sbElement">Modificar un Producto</a></li>
+                                <li><a id="sbElement">Eliminar un Producto</a></li>
+                                <li><a id="sbElement">Dar de Alta una Categoría</a></li>
+                                <li><a id="sbElement">Modificar una Categoría</a></li>
+                                <li><a id="sbElement">Eliminar una Categoría</a></li>
+                            </ul>
+                            </li>
+                           
+                        </ul>
+                        <p class="menu-label" style="margin-top: 10em;">
+                                Tienda
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>Categorías</a>
+                                    <ul>
+                                        <li><a id="sbElement">Discos</a></li>
+                                        <li><a id="sbElement">Ropa</a></li>
+                                        <li><a id="sbElement">Películas</a></li>
+                                        <li><a id="sbElement">Accesorios</a></li>
+                                        <li><a id="sbElement">Instrumentos</a></li>
+                                        <li><a id="sbElement">On Sale!</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Pedidos</a>
+                                    <ul>
+                                        <li><a id="sbElement">Consulta Pedidos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <p class="menu-label" style="margin-top: 10em;">
+                            Administrar Compras
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Carrito</a>
+                                <ul>
+                                    <li><a id="sbElement">Ver Carrito</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Pedidos</a>
+                                <ul>
+                                    <li><a id="sbElement">Consulta Pedidos</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Balance</a></li>
+                        </ul>
+                </div>
+            </div>
+            <!-- MAIN CONTENT -->
+            <div class="col-md-6 col-sm-6 col-xs-18 main-content">
+                <div>
+                    <h3 class="headline-primary">
+                    <i class="fa fa-hamburger fa-3x pull-left menu-toggle" aria-hidden="true" id="burger"></i>
+                    </h3>
+                    <div class="container" style="margin-left: 10em;">
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
         <script src="https://kit.fontawesome.com/e00d4c190b.js"></script>
+        <script src="../RESOURCES/FRAMEWORKS/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="../RESOURCES/JS/login.js"></script>
     </body>
 </html>
